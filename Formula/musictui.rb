@@ -1,10 +1,10 @@
 class Musictui < Formula
   desc "Apple Music TUI + CLI: multi-room AirPlay, library browsing, venue EQ"
   homepage "https://musictui.com"
-  url "https://github.com/anthonymaley/musictui/archive/refs/tags/v3.5.0.tar.gz"
-  sha256 "99928153af46e8bc1ebff2189a97db185fbf50cd01c472a8c68e5def37427823"
+  url "https://github.com/anthonymaley/MusicTUI/archive/refs/tags/v3.6.0.tar.gz"
+  sha256 "ca2d0e9dcc133b87416437bd52fb384a224abd9ecc53a42d7fa93b5925ad5785"
   license "MIT"
-  head "https://github.com/anthonymaley/musictui.git", branch: "main"
+  head "https://github.com/anthonymaley/MusicTUI.git", branch: "main"
 
   depends_on :macos
   depends_on xcode: ["15.0", :build]
@@ -29,6 +29,6 @@ class Musictui < Formula
   end
 
   test do
-    assert_match "3.5.0", shell_output("#{bin}/music --version")
+    assert_match "3.6.0", shell_output("#{bin}/music --version")
   end
 end
