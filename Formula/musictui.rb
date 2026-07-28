@@ -1,8 +1,8 @@
 class Musictui < Formula
   desc "Apple Music TUI + CLI: multi-room AirPlay, radio, library, venue EQ"
   homepage "https://musictui.com"
-  url "https://github.com/anthonymaley/MusicTUI/archive/refs/tags/v3.8.1.tar.gz"
-  sha256 "f8287daeefff0929353a3e382f5603c5bf72ab58161ad5282b68ea47938c1d33"
+  url "https://github.com/anthonymaley/MusicTUI/archive/refs/tags/v3.8.2.tar.gz"
+  sha256 "815a50228e5cb0d124a9c8dabcb7f5cd95312ff124686ed1dda244bf2888a1a7"
   license "MIT"
   head "https://github.com/anthonymaley/MusicTUI.git", branch: "main"
 
@@ -29,6 +29,6 @@ class Musictui < Formula
   end
 
   test do
-    assert_match "3.8.1", shell_output("#{bin}/music --version")
+    assert_match "3.8.2", shell_output("#{bin}/music --version")
   end
 end
