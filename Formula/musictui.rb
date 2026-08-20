@@ -6,9 +6,8 @@ class Musictui < Formula
   license "MIT"
   head "https://github.com/anthonymaley/MusicTUI.git", branch: "main"
 
-  depends_on :macos
-  depends_on xcode: ["15.0", :build]
   depends_on "chafa"
+  depends_on macos: :sonoma
 
   def install
     cd "tools/music" do
