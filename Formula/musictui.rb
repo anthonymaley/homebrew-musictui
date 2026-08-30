@@ -6,6 +6,12 @@ class Musictui < Formula
   license "MIT"
   head "https://github.com/anthonymaley/MusicTUI.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/anthonymaley/MusicTUI/releases/download/v3.10.1"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "15eec9e44f0c45e63c0abacea25f24eb3bd5fd6bf6f354d3e93b60703c2ea9ce"
+  end
+
   depends_on "chafa"
   depends_on macos: :sonoma
 
