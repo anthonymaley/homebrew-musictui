@@ -1,16 +1,16 @@
 class Musictui < Formula
   desc "Apple Music TUI + CLI: multi-room AirPlay, radio, library, venue EQ"
   homepage "https://musictui.com"
-  url "https://github.com/anthonymaley/MusicTUI/archive/refs/tags/v3.24.5.tar.gz"
-  sha256 "2b4f561ef00996bb50febca51bcf1f5def417bf20ce5d611057f81cee72c9610"
+  url "https://github.com/anthonymaley/MusicTUI/archive/refs/tags/v3.25.0.tar.gz"
+  sha256 "e85109e67d3cd7c8a7d6fafe0508cf3f47af7f6b491a677cd0e39274e8639c76"
   license "MIT"
   head "https://github.com/anthonymaley/MusicTUI.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/anthonymaley/MusicTUI/releases/download/v3.24.5"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "de929593669078c84b602064d0b109fbb3236300ab8d0d4c1d6d20b0a3fbf2e0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "01ee8ffdc9cbc4f603b75c3be6517046c9ac0d0b8afe745326927cbf66def65a"
-    sha256 cellar: :any_skip_relocation, sequoia:       "d92f4b10d072dd9a4912919c0c6276cfaeab8e8fedf3983827e2afa1a96de345"
+    root_url "https://github.com/anthonymaley/MusicTUI/releases/download/v3.25.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "4610ceba15a18cdbe55d7fda4fe850a163c70218ad3118d8822b9cf1abcddab8"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "1d8c2149417147e04c8eae209d3bfb713688cf728e421fa1c94f7c35ed1391e6"
+    sha256 cellar: :any_skip_relocation, sequoia:       "9fa648f812eb25e322a0b7c65a5e7caab68b858ad9d60277fb7350c7f10acf61"
   end
 
   depends_on "chafa"
@@ -37,6 +37,6 @@ class Musictui < Formula
   end
 
   test do
-    assert_match "3.24.5", shell_output("#{bin}/music --version")
+    assert_match "3.25.0", shell_output("#{bin}/music --version")
   end
 end
